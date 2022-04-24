@@ -3,7 +3,7 @@ import { Answer, Example, Question } from "../styled-components/styled-com";
 
 function Jsques1() {
 	return (
-		<div style={{ margin: "2vw 5vw 0 5vw" }}>
+		<div>
 			<Question>
 				{" "}
 				Q1. What is the difference between null and undefined ?

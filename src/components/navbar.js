@@ -38,12 +38,12 @@ function Navbar() {
 								</button>
 							</li>
 						</Link>
-						<Link to="/" className="navbar_collapse_link">
+						<Link to="/others" className="navbar_collapse_link">
 							<li className="nav-item">
 								<button
 									type="button"
 									className="nav-link active btn btn-danger">
-									Page 3
+									Others
 								</button>
 							</li>
 						</Link>

@@ -9,7 +9,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<App />
+		<div style={{ margin: "2vw 5vw 0 5vw" }}>
+			<App />
+		</div>
 	</React.StrictMode>
 );
 
