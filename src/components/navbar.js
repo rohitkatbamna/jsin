@@ -4,7 +4,7 @@ import "../scss/navbar.scss";
 
 function Navbar() {
 	return (
-		<nav className="navbar navbar-expand-sm navbar-light navbar_all_of_it">
+		<nav className="navbar navbar-expand-md navbar-light navbar_all_of_it">
 			<div className="container-fluid navbar_container">
 				<button
 					className="navbar-toggler"

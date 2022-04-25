@@ -5,7 +5,7 @@ import Page1 from "./pages/page1";
 import "./scss/app.scss";
 function App() {
 	return (
-		<div className="app">
+		<div className="app" style={{ margin: "2vw 5vw 0 5vw" }}>
 			<h1 className="text-center fw-bold">JavaScript Interview Questions</h1>
 			<Router>
 				<Routes>
