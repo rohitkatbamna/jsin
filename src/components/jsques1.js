@@ -60,6 +60,20 @@ function Jsques1() {
 					undefined = = null.
 				</Bita>
 			</Answer>
+			<Question>
+				Q3. Can you explicitly assign undefined to a Variable ?
+			</Question>
+			<Answer>
+				Ans. Yes, you can, because undefined itself is a kind of keyword which
+				you can use.
+				<br />
+				When you want to compare value then the values, undefined or not, then
+				this keyword is useful for you.
+			</Answer>
+			<Question>
+				Q4. Difference between function scope and block scope ?
+			</Question>
+			<Answer>Ans.</Answer>
 		</div>
 	);
 }
