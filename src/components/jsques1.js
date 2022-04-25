@@ -185,9 +185,9 @@ function Jsques1() {
 			</Answer>
 			<Question>Q8. Difference between Rest and Spread operator ?</Question>
 			<Answer>
-				Ans.From year ES6 onwards. There are these ... dots used in many places.
-				Also, sometimes they are called as the rest operator. And sometimes the
-				very same three dots are called spread operator.
+				Ans. From year ES6 onwards. There are these ... dots used in many
+				places. Also, sometimes they are called as the rest operator. And
+				sometimes the very same three dots are called spread operator.
 				<br />
 				So let's check it out. We will begin with the rest operator first.
 				Imagine a situation where you have to create a function called sum,
@@ -212,8 +212,61 @@ function Jsques1() {
 				<Bita>
 					We want the function to receive any amount of numbers and want it to
 					work so use ... (rest operator) Only usage of it in this way is rest
-					operator.
+					operator. So whenever you use three dots with function to deal with
+					any number of parameters, then you call it rest operator. That is for
+					the rest of parameters.
 				</Bita>
+				<br />
+				As the rest operator puts the separate data values in one area, the
+				spread does exactly the opposite.
+				<Example>
+					let arr1 = [1,2,3];
+					<br />
+					let arr2 = [...arr1,4,5];
+					<br />
+					console.log(arr2); // [1,2,3,4,5]
+				</Example>
+				<Bita>
+					They are three dots only, but with the context where they have used,
+					they behavior changes.
+				</Bita>
+			</Answer>
+			<Question>Q9. Can we use argument object in arrow function ?</Question>
+			<Answer>
+				{" "}
+				Ans. It cannot be used if it is the traditional way of writing function,
+				it can work, otherwise it will not work.
+			</Answer>
+			<Question>
+				Q10. Which is the best way to create new arrays with assignments ?
+			</Question>
+			<Answer>Ans. Use Spread operator</Answer>
+			<Question>
+				Q11. How can you handle the number of parameters passed to a function ?
+				Or the question can be create a function which can take any number of
+				parameters that returns some or maybe max value or any other such
+				calculated values.
+			</Question>
+			<Answer>
+				Ans. So you can use the rest operator to deal with such situation.
+			</Answer>
+			<Question>
+				Q12.Can the rest operator be placed anywhere in the function parameter
+				list? Or there can be a core sample like this. One may ask you, is this
+				piece of code valid ?<br />
+				<Example>
+					function text(...a,b)
+					<LCB />
+					<br /> /any Statements here
+					<br />
+					<RCB />
+				</Example>
+			</Question>
+			<Answer>
+				Ans. We cannot have a rest parameter in the beginning of parameter list.
+				We have to put it at last. If we have just a parameter list, it's okay.
+				But if we have more parameters then the rest parameter should be at last
+				position because it is the rest of the parameters.
 			</Answer>
 		</div>
 	);
