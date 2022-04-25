@@ -18,3 +18,9 @@ export const Bita = styled.span`
 	font-style: italic;
 	font-weight: bold;
 `;
+export function LCB() {
+	return <>&#123;</>;
+}
+export function RCB() {
+	return <>&#125;</>;
+}

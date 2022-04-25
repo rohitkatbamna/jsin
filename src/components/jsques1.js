@@ -3,7 +3,9 @@ import {
 	Answer,
 	Bita,
 	Example,
+	LCB,
 	Question,
+	RCB,
 } from "../styled-components/styled-com";
 
 function Jsques1() {
@@ -101,19 +103,20 @@ function Jsques1() {
 				<br />
 				The following program explains the use of var, let and const:
 				<Example>
-					function hello()&#123;
+					function hello()
+					<LCB />
 					<br />
 					<div className="ms-4">
-						if (true) &#123;
+						if (true) <LCB />
 						<br />
 						var a = "JavaScript"; <br />
 						let b = "C++"; <br />
-						const c = "Python"; <br /> &#125;
+						const c = "Python"; <br /> <RCB />
 						<br />
 						console.log(a); // "JavaScript" <br />
 						console.log(b) // Uncaught ReferenceError b not defined.
 					</div>{" "}
-					&#125;
+					<RCB />
 				</Example>
 			</Answer>
 			<Question>
@@ -133,8 +136,83 @@ function Jsques1() {
 					This means writing a semicolon at the end of line is optional in
 					JavaScript. And it also means that when there is a line break like on
 					this line console.log, JavaScript inserts a semicolon at the end of
-					line. And this very feature is called as automatic semicolon
-					insertion.
+					line. And this very feature is called as automatic semicolon insertion
+					OR ASI.
+				</Bita>
+			</Answer>
+			<Question>Q6. Should you terminate all lines by a semicolon ?</Question>
+			<Answer>
+				Ans. It's a good practice to have a semicolon at the end though it is
+				optional because JavaScript does insert a semicolon. But if you put it,
+				it's a good practice. At least you have to make sure that if you do not
+				put semicolon in a improper way.
+			</Answer>
+			<Question>
+				Q7. Why this code is returning undefined in spite of function returning
+				a valid object literal ?
+				<Example>
+					function test() <LCB /> <br />
+					<div className="ms-4">
+						return <br />
+						<LCB />
+						<div className="ms-4">a : 5</div>
+						<br />
+						<RCB />
+					</div>
+					<br />
+					<RCB />
+					<br />
+					const obj = test(); <br />
+					console.log(obj); //undefined
+				</Example>
+			</Question>
+			<Answer>
+				Ans. The automatic semicolon insertion OR ASI put semicolon at the end
+				of return thus we are returning nothing.{" "}
+				<Bita>Move Left curly barket next to return.</Bita>
+			</Answer>
+			<Question>
+				Q7. Can use strict statement are the strict mode change the behavior of
+				ASI ?
+			</Question>
+			<Answer>
+				Ans. No, it doesn't change the behavior. If you write you strict, that
+				does not mean that you have to end all lines with the semicolon. I mean
+				the respective lines anyway. Like if condition is never terminated with
+				a semicolon, but lines which are to be terminated with a semicolon that
+				also, even if you use use strict, it doesn't force you to put a
+				semicolon on all lines.
+			</Answer>
+			<Question>Q8. Difference between Rest and Spread operator ?</Question>
+			<Answer>
+				Ans.From year ES6 onwards. There are these ... dots used in many places.
+				Also, sometimes they are called as the rest operator. And sometimes the
+				very same three dots are called spread operator.
+				<br />
+				So let's check it out. We will begin with the rest operator first.
+				Imagine a situation where you have to create a function called sum,
+				which can take any number of arguments and at the end it should return
+				the sum of all the parameters passed to it. Let's start practically.
+				Here I am creating the function. Function sum. Now I do not warn that
+				there are two parameters passed or maybe three parameters passed. What I
+				just want is that I should be able to pass any number of parameters and
+				that should be received by this function.
+				<Example>
+					function sum(...nums)
+					<LCB />
+					<br />
+					<span className="ms-4"></span>console.log(nums);
+					<br />
+					<RCB />
+					<br />
+					console.log(sum(3,4)) // [3,4]
+					<br />
+					console.log(sum(3,4,5)) // [3,4,5]
+				</Example>
+				<Bita>
+					We want the function to receive any amount of numbers and want it to
+					work so use ... (rest operator) Only usage of it in this way is rest
+					operator.
 				</Bita>
 			</Answer>
 		</div>
