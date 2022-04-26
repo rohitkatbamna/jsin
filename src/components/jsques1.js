@@ -268,6 +268,69 @@ function Jsques1() {
 				But if we have more parameters then the rest parameter should be at last
 				position because it is the rest of the parameters.
 			</Answer>
+			<Question>
+				Q13. When do you get infinity or minus that is negative infinity
+				(-Infinity) as output ?
+			</Question>
+			<Answer>
+				Ans.{" "}
+				<Bita>
+					In JavaScript, the numbers are stored in 64 bit format. It means any
+					value which cannot fit in this 64 bit format will return infinity.
+					That means it cannot hold the value. The value is larger than 64 bit.
+					At that time, you get infinity.
+				</Bita>
+				<Example>
+					console.log(9e400); // Infinity
+					<br />
+					console.log(-9e400); // -Infinity
+					<br />
+					console.log(Number.MAX_VALUE) // 1.7976931348623157e+308
+					<br />
+					console.log(Number.MAX_VALUE * 2) // Infinity
+				</Example>
+				Ideally, when you expect that in some calculation, you might get some
+				huge value and you want to put a validation, there is useful method
+				called <Bita>isFinite().</Bita>
+			</Answer>
+			<Question>
+				Q14. How will you put a validation for positive or negative infinity?
+			</Question>
+			<Answer>
+				Ans. The following is the anwser.
+				<Example>
+					<br />
+					if(num = = = Number.NEGATIVE_INFINITY) <LCB />
+					<br />
+					<span className="ms-4"> return 'Negative Infinity Value'</span>
+					<br />
+					<RCB />
+					<br />
+					else <LCB /> <br />
+					<span className="ms-4"> return num //or some other value of cal</span>
+					<br />
+					<RCB />
+				</Example>
+				<Example>
+					<br />
+					if(num = = = Number.POSITIVE_INFINITY) <LCB />
+					<br />
+					<span className="ms-4"> return 'Positive Infinity Value'</span>
+					<br />
+					<RCB />
+					<br />
+					else <LCB /> <br />
+					<span className="ms-4"> return num //or some other value of cal</span>
+					<br />
+					<RCB />
+				</Example>
+			</Answer>
+			<Question>
+				Q15. What will be the output of this code ?
+				<Example>console.log(1/0)</Example>
+			</Question>
+			<Answer>Ans. We get Infinity in JavaScript.</Answer>
+			<Question>Q16. When do you get NaN as output?</Question>
 		</div>
 	);
 }
