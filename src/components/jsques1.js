@@ -348,11 +348,92 @@ function Jsques1() {
 				</Bita>
 			</Answer>
 			<Question>
-				Q17. What is the difference between is then and is finite matter ?
+				Q17. What is the difference between isNaN and isFinite ?
 			</Question>
 			<Answer>
 				Ans. isNaN() is just going to check whether the value is not a number or
 				not and isFinite checks for NaN as well as infinity values.
+			</Answer>
+			<Question>Q18. Explain must know points of arrow function</Question>
+			<Answer>
+				Ans. So in other words you can see that arrow function is actually
+				function expression.Arrow function is less verbose. That means you have
+				less code to write and better way to deal with it. We can also write
+				IIFE(Immediately Invoked Function Expression) with es5 syntax.We use
+				this IIFE to avoid global Leakages.
+				<Example>
+					(function test()
+					<LCB />
+					<br />
+					console.log("IIFE");
+					<br />
+					<RCB />
+					)(); //IIFE
+					<br />
+					/IIFE in without ES5
+				</Example>
+				<Example>
+					(() ={">"}
+					<LCB />
+					<br />
+					console.log("IIFE");
+					<br />
+					<RCB />
+					)(); //IIFE
+					<br />
+					/IIFE in with ES5
+				</Example>
+				<Bita>
+					Three things that not work with arrow function.
+					<ol>
+						<li>
+							{" "}
+							"this" object does not work with arrow function.
+							<Example>
+								const myWork = <LCB />
+								<br />
+								test: () ={">"} console.log(this),
+								<br />
+								test1() <br />
+								<LCB /> <br />
+								console.log(this); <RCB /> <br />
+								<RCB />
+								<br />
+								myWork.test(); // points to intance of global window object
+								<br />
+								myWork.test1(); // points to instance of myWork object
+							</Example>
+							Now why does this works with traditional function but not with
+							arrow function. The reason is before ES6 their was no class, the
+							function also had to do the job of class. But with ES6 class was
+							defined so arrow function no longer needed to do the job of class
+							so it was not their.
+						</li>
+						<li>
+							Arguments object does not work with arrow function. The arguments
+							object which used to show us the parameter pass to the function
+							like this one.
+							<Example>
+								function test() <LCB /> <br />
+								<div className="ms-4">console.log(arguments);</div>
+								<br />
+								<RCB /> <br /> test(1, 2, 3, 4); // logs <LCB /> '0': 1, '1': 2,
+								'2': 3, '3': 4 <RCB />
+							</Example>
+							The above in arrow function gives ERROR. See below Example
+							<Example>
+								const test = () ={">"} <LCB /> <br />
+								console.log(arguments);
+								<br />
+								<RCB />;
+								<br /> test(1, 2, 3, 4); // ReferenceError: arguments is not
+								defined
+							</Example>
+							Use rest operator here to act as arguments.
+						</li>
+						<li>And third is you cannot use new to call arrow function. </li>
+					</ol>
+				</Bita>
 			</Answer>
 		</div>
 	);
