@@ -370,7 +370,7 @@ function Jsques1() {
 					<RCB />
 					)(); //IIFE
 					<br />
-					/IIFE in without ES5
+					/IIFE in without ES6
 				</Example>
 				<Example>
 					(() ={">"}
@@ -381,7 +381,7 @@ function Jsques1() {
 					<RCB />
 					)(); //IIFE
 					<br />
-					/IIFE in with ES5
+					/IIFE in with ES6
 				</Example>
 				<Bita>
 					Three things that not work with arrow function.
@@ -464,7 +464,30 @@ function Jsques1() {
 					myWork.test();
 				</Example>
 			</Question>
-			<Answer></Answer>
+			<Answer>Ans. Check point No.1 in Q18</Answer>
+			<Question>
+				Q22. How can you handle arguments object like functionality in arrow
+				function ?
+			</Question>
+			<Answer>
+				Ans. Arrow function does not support arguments object (...)rest operator
+				is the replacement for it.
+			</Answer>
+			<Question>Q23. Can you write IIFE with arrow functions ?</Question>
+			<Answer>
+				Ans. Yes, of course.
+				<Example>
+					(() ={">"}
+					<LCB />
+					<br />
+					console.log("IIFE");
+					<br />
+					<RCB />
+					)(); //IIFE
+					<br />
+					/IIFE in with ES6
+				</Example>
+			</Answer>
 		</div>
 	);
 }
