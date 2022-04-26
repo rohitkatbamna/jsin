@@ -331,6 +331,29 @@ function Jsques1() {
 			</Question>
 			<Answer>Ans. We get Infinity in JavaScript.</Answer>
 			<Question>Q16. When do you get NaN as output?</Question>
+			<Answer>
+				Ans. NaN is a global property representing 'Not a Number'(NaN).It is a
+				special Number. isFinite() can also chaeck this. Consider the following
+				Example
+				<Example>
+					console.log(5 * 'value'); // gives a NaN
+					<br />
+					console.log(NaN = = NaN); // false
+					<br />
+					console.log(NaN = = = NaN) // false
+				</Example>
+				<Bita>
+					{" "}
+					Remember NaN = = NaN and NaN = = = NaN both evalutes to false.
+				</Bita>
+			</Answer>
+			<Question>
+				Q17. What is the difference between is then and is finite matter ?
+			</Question>
+			<Answer>
+				Ans. isNaN() is just going to check whether the value is not a number or
+				not and isFinite checks for NaN as well as infinity values.
+			</Answer>
 		</div>
 	);
 }
