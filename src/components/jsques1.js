@@ -431,10 +431,40 @@ function Jsques1() {
 							</Example>
 							Use rest operator here to act as arguments.
 						</li>
-						<li>And third is you cannot use new to call arrow function. </li>
+						<li>
+							And third is you cannot use new to call arrow function. Naturally
+							you cannot because arrow function will not act as a class. Using
+							arrow will give error.
+						</li>
 					</ol>
 				</Bita>
 			</Answer>
+			<Question>
+				Q20. Explain the syntactical features of arrow function.
+			</Question>
+			<Answer> Ans. Here all of syntax related changes are given</Answer>
+			<Question>Q21. Why "this" does not work in arrow function ?.</Question>
+			<Answer>
+				Ans. Then the answer is of course no. But the reason is that we already
+				have a class keyword to deal with the classes. So we do not need the
+				function to act as a class. So there is no point that "this" which
+				actually is used to refer the current context is needed in function.
+				That's why our function is free from that job. And that's the reason why
+				this object does not work.
+			</Answer>
+			<Question>
+				Q21. Explain output of the following code with a reason ?
+				<Example>
+					const myWork = <LCB />
+					<br />
+					test: () ={">"} console.log(this),
+					<br />
+					<RCB />
+					<br />
+					myWork.test();
+				</Example>
+			</Question>
+			<Answer></Answer>
 		</div>
 	);
 }
