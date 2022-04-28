@@ -57,6 +57,40 @@ function Jsques2() {
 				members with a closure pattern assure better approach of making a
 				variable global.
 			</Answer>
+			<Question>Q27. How can sum(5)(6) return 11 ?</Question>
+			<Answer>
+				Ans. So this way is actually called as <Bita>Currying</Bita>.Currying is
+				supported by many programming languages.
+				<Bita>
+					It's a unique way to call inner functions, where you can pass
+					arguments partially or pass multiple arguments in a function, but one
+					argument at a time.
+				</Bita>
+				<Example>
+					function sum(a)
+					<LCB />
+					<br />
+					<div className="ms-4">
+						return function (b)
+						<LCB />
+						<br />
+						<div className="ms-4">
+							<span className="ms-4">return a+b;</span>
+							<br />
+							<RCB />;
+						</div>
+					</div>
+					<RCB />
+					<br />
+					console.log(sum(5)(6));// 11
+				</Example>
+				Another Example in <Bita>Arrow Function.</Bita>
+				<Example>
+					const sum = a ={">"} b ={">"} a+b;
+					<br />
+					console.log(sum(5)(6));// 11
+				</Example>
+			</Answer>
 		</div>
 	);
 }
