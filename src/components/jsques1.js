@@ -11,6 +11,7 @@ import {
 function Jsques1() {
 	return (
 		<div>
+			{/* Questions 1 to Questions 23 here */}
 			<Question>
 				{" "}
 				Q1. What is the difference between null and undefined ?
