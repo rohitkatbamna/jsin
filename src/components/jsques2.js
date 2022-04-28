@@ -91,6 +91,38 @@ function Jsques2() {
 					console.log(sum(5)(6));// 11
 				</Example>
 			</Answer>
+			<Question>
+				Q28. What will this statement do ? Explain in detail.
+				<Example>
+					const multiplication = a ={">"} b ={">"} c ={">"} return a*b*c
+				</Example>
+			</Question>
+			<Answer>
+				Ans. This is currying in one line. See below
+				<Example>
+					const multiplication = a ={">"}
+					<LCB />
+					<br />
+					<div className="ms-4">
+						return b ={">"}
+						<LCB /> <br />
+						<div className="ms-4">
+							return c ={">"}
+							<LCB /> <br />
+							<div className="ms-4">return a*b*c;</div>
+							<RCB />
+						</div>
+						<RCB />
+					</div>
+					<RCB />
+				</Example>
+			</Answer>
+			<Question>Q29. Explain practical usage of function currying.</Question>
+			<Answer>
+				Ans. Well, currying is an incredibly useful technique of functional
+				programming which solves various purposes like parsing partial
+				parameters or avoid unwanted repetitions.
+			</Answer>
 		</div>
 	);
 }

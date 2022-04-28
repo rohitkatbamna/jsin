@@ -16,7 +16,7 @@ function Others() {
 			</Answer>
 			<Question>Q What is console.log&#40; 1 &gt; 10 &gt; 100 &#41; ?</Question>
 			<Answer>
-				Again type coersion is a bitch. For Explanation Look above.
+				Ans. Again type coersion is a bitch. For Explanation Look above.
 				<br />
 				<Bita>The answer is false.</Bita>
 			</Answer>
