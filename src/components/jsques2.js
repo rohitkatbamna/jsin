@@ -1,11 +1,46 @@
 import React from "react";
-import { Answer, Question } from "../styled-components/styled-com";
+import {
+	Answer,
+	Bita,
+	Example,
+	LCB,
+	Question,
+	RCB,
+} from "../styled-components/styled-com";
 
 function Jsques2() {
 	return (
 		<div>
 			<Question>Q24. How does a closure work in JavaScript?</Question>
-			<Answer>Ans. </Answer>
+			<Answer>
+				Ans.{" "}
+				<Bita>
+					Ideally, when a function comes under another function, a closure is
+					created.Closure pattern remembers outer variable and also helps to
+					access outer scope members.
+				</Bita>
+				<Example>
+					function outer()
+					<LCB />
+					<br />
+					<div className="ms-4">
+						function inner()
+						<LCB />
+						<br />
+						<div className="ms-4">console.log("Inner Function called");</div>
+						<RCB />
+					</div>
+					inner();
+					<br />
+					<RCB />
+					<br />
+					outer(); //"Inner Function called"
+				</Example>
+				<Bita>
+					So ideally, when you use closure, that means you are making the
+					private members globally available but with a cause.
+				</Bita>
+			</Answer>
 		</div>
 	);
 }
