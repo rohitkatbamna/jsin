@@ -49,6 +49,14 @@ function Jsques2() {
 				Ans. So we can do that using closure. We return the function without
 				parentheses and we can achieve it.
 			</Answer>
+			<Question>Q26. Explain the advantages of a closure ?</Question>
+			<Answer>
+				Ans. The main advantage of closure is that any member, which is private
+				for certain scope, can be accessed, keeping it private so that the
+				variable is away from any accidental change of value. Accessing private
+				members with a closure pattern assure better approach of making a
+				variable global.
+			</Answer>
 		</div>
 	);
 }
