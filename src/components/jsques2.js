@@ -41,6 +41,14 @@ function Jsques2() {
 					private members globally available but with a cause.
 				</Bita>
 			</Answer>
+			<Question>
+				Q25. How can you access private variable or a function outside of the
+				scope ?
+			</Question>
+			<Answer>
+				Ans. So we can do that using closure. We return the function without
+				parentheses and we can achieve it.
+			</Answer>
 		</div>
 	);
 }
