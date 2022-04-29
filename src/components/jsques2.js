@@ -160,7 +160,100 @@ function Jsques2() {
 					But Frist see below Basic syntax of the Symbol.iterator with easier
 					way that is the array.
 				</Bita>
-				<Example></Example>
+				<Example>
+					let arr = [1, 2]; <br />
+					let itr = arr[Symbol.iterator]();
+					<br />
+					console.log(itr); //Object [Array Iterator]
+					<LCB />
+					<RCB />
+					<br />
+					console.log(itr.next());//
+					<LCB />
+					value: 1, done: false
+					<RCB />
+					<br />
+					console.log(itr.next());//
+					<LCB />
+					value: 2, done: false
+					<RCB />
+					<br />
+					console.log(itr.next());//
+					<LCB />
+					value:undefined, done: true
+					<RCB />
+					<br />
+				</Example>
+				Above true in done means iteration is over. Imagine that we have the
+				following obj and we want to iterate through 10 to 15.
+				<Example>
+					let obj = <LCB />
+					<br />
+					<div className="ms-4">
+						start : 10,
+						<br />
+						end : 15,
+					</div>
+					<RCB />
+				</Example>
+				First of all, when you want to make an object iterable, it should have
+				method whose key value is Symbol.iterator. That means I am supposed to
+				put a method inside object. At the moment I'm defining the method
+				separately, so I will say object.That means there supposed to put a
+				method inside object.
+				<Example>
+					let obj = <LCB />
+					<br />
+					<div className="ms-4">
+						start: 10,
+						<br />
+						end: 15,
+						<br />
+						[Symbol.iterator]() <LCB />
+						<br />
+						<span className="ms-4">return this;</span>
+						<br />
+						<RCB />,<br />
+						next() <LCB />
+						<br />
+						<div className="ms-4">
+							if (this.start {"<"}= this.end) <LCB />
+							<br />
+							return
+							<LCB /> <br />
+							<div className="ms-4">
+								value: this.start++, <br />
+								done: false <br />
+								<RCB />;<br />
+							</div>
+							<RCB /> else <LCB />
+							<br />
+							return <LCB /> done: true <RCB />;
+							<br />
+							<RCB />
+						</div>
+						<RCB />,<br />
+					</div>
+					<RCB />;<br />
+					for (let i of obj) <LCB />
+					<div className="ms-4">console.log(i);</div>
+					<RCB /> / 10 11 12 13 14 15
+					<br />
+				</Example>
+				This has a limitation and the limitation is that this way is only
+				possible when iterator and iterable are the same object. Also, if there
+				are two or more for off running simultaneously, then this will not work.
+				But actually that is also a very rare case.
+			</Answer>
+			<Question>Q31. What is the purpose of iterator ?</Question>
+			<Answer>
+				<Bita>
+					The use of an iterator is to make a data structure iterable, which is
+					not eddies, strings, maps or sets or other similar collections are
+					already iterable. But when you create an object which should have
+					facility of putting for off loop on it, then you need to create the
+					iterator.
+				</Bita>
 			</Answer>
 		</div>
 	);
