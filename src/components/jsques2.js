@@ -255,6 +255,13 @@ function Jsques2() {
 					iterator.
 				</Bita>
 			</Answer>
+			<Question>Q32. How do you create an iterator ?</Question>
+			<Answer>
+				The symbol that iterator method must be implemented, which should return
+				and iterator object and should also have a next method which returns the
+				object where you have the value and the done status, or the done status
+				only when the iteration needs to end.
+			</Answer>
 		</div>
 	);
 }
