@@ -247,6 +247,7 @@ function Jsques2() {
 			</Answer>
 			<Question>Q31. What is the purpose of iterator ?</Question>
 			<Answer>
+				Ans.{" "}
 				<Bita>
 					The use of an iterator is to make a data structure iterable, which is
 					not eddies, strings, maps or sets or other similar collections are
@@ -257,10 +258,25 @@ function Jsques2() {
 			</Answer>
 			<Question>Q32. How do you create an iterator ?</Question>
 			<Answer>
-				The symbol that iterator method must be implemented, which should return
-				and iterator object and should also have a next method which returns the
-				object where you have the value and the done status, or the done status
-				only when the iteration needs to end.
+				Ans. The symbol that iterator method must be implemented, which should
+				return and iterator object and should also have a next method which
+				returns the object where you have the value and the done status, or the
+				done status only when the iteration needs to end.
+			</Answer>
+			<Question>Q32. Explain a practical use of an iterator.</Question>
+			<Answer>
+				Ans.{" "}
+				<Bita>
+					The use of any trader is not very prompt, when you use it in the same
+					scope like we have done that. So it is in the same scope. But let's
+					say you have your own data structure which is used by other
+					programmers. Then the real charm comes into picture as the custom data
+					structure which you have created needs to have a provision of far off
+					that is kind of loop. Then if your object is not iterable, then it
+					will not work. So you are in a way creating a pointer to more in the
+					data structure which you have provided to the end user who is actually
+					a programmer.
+				</Bita>
 			</Answer>
 		</div>
 	);
