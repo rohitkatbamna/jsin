@@ -123,6 +123,45 @@ function Jsques2() {
 				programming which solves various purposes like parsing partial
 				parameters or avoid unwanted repetitions.
 			</Answer>
+			<Question>Q30. Explain Iterables and Iterators.</Question>
+			<Answer>
+				Ans. The iterator concept is newly introduced in ES6. It's a kind of new
+				mechanism to iterate or traverse through data structures. As you know,
+				array is already iterable. It means if you want to put a far off loop on
+				an array, then you can easily do that. See Example below
+				<Example>
+					let arr = [2,3,4,5];
+					<br />
+					for(let i of arr)
+					<LCB />
+					<br />
+					<span className="ms-4">console.log(i)</span>;
+					<br />
+					<RCB />
+				</Example>
+				As shown above Similarly, strings, maps, sets. All these data
+				collections are iterable.
+				<br />
+				But imagine that you have an object literally like this.
+				<br />
+				<Example>
+					let obj = <LCB /> <br />
+					<div className="ms-4">
+						value1 : number,
+						<br /> value2 :number{" "}
+					</div>
+					<RCB />
+				</Example>
+				Now you want to use for off loop on this object. In short, you want to
+				make this object literal and iterable object. You can do that in ES6
+				using Symbol.iterator and we are going to implement or rather convert an
+				object literal into an iterable object as well. <br />
+				<Bita>
+					But Frist see below Basic syntax of the Symbol.iterator with easier
+					way that is the array.
+				</Bita>
+				<Example></Example>
+			</Answer>
 		</div>
 	);
 }
