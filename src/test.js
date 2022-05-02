@@ -1,8 +1,10 @@
-function* recursive(num) {
-	if (num === 0) {
-		return 1;
-	} else {
-		yield* recursive(num - 1) * num;
-	}
-}
-console.log(...recursive(5));
+const obj = {
+	start: 10,
+	end: 15,
+	*[Symbol.iterator]() {
+		for (let cnt = this.start; cnt <= this.end; cnt++) {
+			yield cnt;
+		}
+	},
+};
+console.log([...obj]);

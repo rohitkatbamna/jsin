@@ -337,7 +337,32 @@ function Jsques2() {
 					<br /> When it comes to recursive function or even calling one
 					generator function from another. There is a specific syntax that is by
 					using yield* .
+					<br />
+					Generator works best with it iterators.See exmaple below,
 				</Bita>
+				<Example>
+					const obj = <LCB />
+					<br />
+					<div className="ms-4">
+						<div className="ms-4">
+							start: 10,
+							<br />
+							end: 15,
+							<br />
+							*[Symbol.iterator]() <LCB />
+							<br />
+							for (let cnt = this.start; cnt {"<"}= this.end; cnt++) <LCB />
+							<br />
+							yield cnt;
+							<br />
+							<RCB />
+						</div>
+						<RCB />,<br />
+					</div>
+					<RCB />;<br />
+					console.log([...obj]);
+					<br />
+				</Example>
 			</Answer>
 		</div>
 	);
