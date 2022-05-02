@@ -448,6 +448,7 @@ function Jsques2() {
 						<br />
 					</div>
 					<RCB />
+					<br />
 					const gobj = gen();
 					<br />
 					console.log(gobj.next()); //
@@ -475,6 +476,7 @@ function Jsques2() {
 						<br />
 					</div>
 					<RCB />
+					<br />
 					const gobj = gen();
 					<br />
 					console.log(gobj.next()); //
@@ -517,6 +519,48 @@ function Jsques2() {
 					function*() <LCB />
 					<RCB />.
 				</Bita>
+			</Answer>
+			<Question>Q36. Explain all methods of generator object.</Question>
+			<Answer>
+				Ans. So the three matters which we have discussed, the next method which
+				actually moves the function pointer to the next line from the next, that
+				is the last suspended yield. It proceeds further. Whereas the return
+				allows you to terminate the function. And the throw method, which can
+				help you to raise an error with the generator object. So these are the
+				three methods related to the generator object.
+			</Answer>
+			<Question>Q37. Explain the use of yield*.</Question>
+			<Answer>
+				Ans. So we have seen that it's about calling a generator function from
+				another generator function. Or even when you have to call a recursive
+				generator function, then you have to use the yield* syntax.
+			</Answer>
+			<Question>
+				Q38. Can you prevent the return from terminating the generator.
+			</Question>
+			<Answer>
+				Ans. Yes, absolutely. Of course, there should also be a conditional way
+				to deal with this situation. But when you see it are done, it terminates
+				the execution. But let's say if you write a yield statement in finally
+				like this(see Example below), then it will certainly prevent the return
+				from terminating the generator.
+				<Example>
+					function* gen() <LCB />
+					<div className="ms-4">
+						try <LCB />
+						<br />
+						yield "One"; <br />
+						yield "Two";
+						<br />
+						<RCB /> finally <LCB />
+						<br />
+						yield "Finally";
+						<br />
+						<RCB />
+						<br />
+					</div>
+					<RCB />
+				</Example>
 			</Answer>
 		</div>
 	);
