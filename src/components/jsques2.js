@@ -506,6 +506,18 @@ function Jsques2() {
 					generators concept.
 				</Bita>
 			</Answer>
+			<Question>
+				Q35. Which is the right syntax function* () <LCB />
+				<RCB /> or function *() <LCB />
+				<RCB /> ?
+			</Question>
+			<Answer>
+				Ans. Both of them are correct also this is correct{" "}
+				<Bita>
+					function*() <LCB />
+					<RCB />.
+				</Bita>
+			</Answer>
 		</div>
 	);
 }
