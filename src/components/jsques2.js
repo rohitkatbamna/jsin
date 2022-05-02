@@ -250,32 +250,93 @@ function Jsques2() {
 				Ans.{" "}
 				<Bita>
 					The use of an iterator is to make a data structure iterable, which is
-					not eddies, strings, maps or sets or other similar collections are
+					not Arrays, strings, maps or sets or other similar collections are
 					already iterable. But when you create an object which should have
-					facility of putting for off loop on it, then you need to create the
+					facility of putting for...of loop on it, then you need to create the
 					iterator.
 				</Bita>
 			</Answer>
 			<Question>Q32. How do you create an iterator ?</Question>
 			<Answer>
-				Ans. The symbol that iterator method must be implemented, which should
-				return and iterator object and should also have a next method which
-				returns the object where you have the value and the done status, or the
-				done status only when the iteration needs to end.
+				Ans. The Symbol.iterator method must be implemented, which should return
+				and iterator object and should also have a next method which returns the
+				object where you have the value and the done status, or the done status
+				only when the iteration needs to end.
 			</Answer>
-			<Question>Q32. Explain a practical use of an iterator.</Question>
+			<Question>Q33. Explain a practical use of an iterator.</Question>
 			<Answer>
 				Ans.{" "}
 				<Bita>
-					The use of any trader is not very prompt, when you use it in the same
-					scope like we have done that. So it is in the same scope. But let's
-					say you have your own data structure which is used by other
-					programmers. Then the real charm comes into picture as the custom data
-					structure which you have created needs to have a provision of far off
-					that is kind of loop. Then if your object is not iterable, then it
-					will not work. So you are in a way creating a pointer to more in the
-					data structure which you have provided to the end user who is actually
-					a programmer.
+					The use of any iterator is not very prompt, when you use it in the
+					same scope.But let's say you have your own data structure which is
+					used by other programmers. Then the real charm comes into picture as
+					the custom data structure which you have created needs to have a
+					provision of far off that is kind of loop. Then if your object is not
+					iterable, then it will not work. So you are in a way creating a
+					pointer to more in the data structure which you have provided to the
+					end user who is actually a programmer.
+				</Bita>
+			</Answer>
+			<Question>Q34. What are Generators functions ?</Question>
+			<Answer>
+				Ans.{" "}
+				<Bita>
+					Generators can help you to pause and resume the call. That is the
+					simple definition of generator functions.
+				</Bita>
+				Normally when you write a function, it returns a single value. You can
+				think of generators as a kind of function which can return multiple
+				values in phases.
+				<Bita>
+					The function* is the keyword used to define a generator function.
+					Yield is an operator which pauses the generator. Yield also helps to
+					receive input and send output, but that is the next phase.
+					<br />
+					The yield operator, which we are using, is something we can use only
+					in generator functions.
+					<br />
+				</Bita>
+				<br />
+				<Example>
+					const test = function* () <LCB /> <br />
+					<div className="ms-4">
+						console.log("Hello");
+						<br />
+						yield "YieldValue";
+						<br />
+						console.log("World");
+						<br />
+						yield;
+						<br />
+						console.log("And Galaxy");
+					</div>
+					<RCB />;<br />
+					const newtest = test();
+					<br />
+					for (let i of newtest) <LCB />
+					<br />
+					<span className="ms-4">console.log(i);</span>
+					<br />
+					<RCB />
+					<br />
+					console.log(...newtest);
+					<br />
+					<Bita>
+						Both for loop of new test and ...newtest return the same i.e <br />
+						Hello <br />
+						YieldValue <br />
+						World <br />
+						undefined <br />
+						And Galaxy <br />
+					</Bita>
+				</Example>
+				<Bita>
+					So now we know that generators are really working well with iterator
+					because generators are iterable as well. The yield operator, which we
+					are using, is something we can use only in generator functions.
+					<br /> When it comes to recursive function or even calling one
+					generator function from another. There is a specific syntax that is by
+					using yield* .
 				</Bita>
 			</Answer>
 		</div>

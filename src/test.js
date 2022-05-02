@@ -1,17 +1,8 @@
-let obj = {
-	start: 10,
-	end: 15,
-	[Symbol.iterator]() {
-		return this;
-	},
-	next() {
-		if (this.start <= this.end) {
-			return { value: this.start++, done: false };
-		} else {
-			return { done: true };
-		}
-	},
-};
-for (let i of obj) {
-	console.log(i);
+function* recursive(num) {
+	if (num === 0) {
+		return 1;
+	} else {
+		yield* recursive(num - 1) * num;
+	}
 }
+console.log(...recursive(5));
