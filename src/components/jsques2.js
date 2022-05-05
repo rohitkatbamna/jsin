@@ -465,13 +465,12 @@ function Jsques2() {
 					<div className="ms-4">
 						try <LCB />
 						<br />
-						yield "One"; <br />
-						yield "Two";
-						<br />
+						<div className="ms-4">
+							yield "One"; <br />
+							yield "Two";
+						</div>
 						<RCB /> catch <LCB />
-						<br />
-						console.log("Error " + err);
-						<br />
+						<div className="ms-4">console.log("Error " + err);</div>
 						<RCB />
 						<br />
 					</div>
