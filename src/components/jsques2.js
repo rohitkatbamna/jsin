@@ -562,6 +562,40 @@ function Jsques2() {
 					<RCB />
 				</Example>
 			</Answer>
+			<Question>Q39. What is the concept of GC or garbage collection?</Question>
+			<Answer>
+				Ans. When you declare a variable object added or function, all are
+				stored somewhere in the memory. Assume that you have an object. A When
+				your program starts, a location is created and data stored in this
+				location. There are multiple locations, in fact, to hold huge values,
+				but we are making one box as a location to simplify the presentation.
+				All right. So this object is which has some data and stored in the
+				location. In between there might be some read write operations.
+				<br />
+				And what happens when the program ends ?{" "}
+				<Bita>
+					Once the program ends, the party is over. Now this location needs to
+					be cleaned as it is of no use. So when the program ends, this is the
+					garbage which needs to be cleared. Normal memory management or memory
+					lifecycle can be thought of like this.
+				</Bita>{" "}
+				You have led to an object, a variable or a function that is an
+				allocation of memory happens first, then there might be some rewrite
+				process. This is a continuous process. In fact, till the program ends
+				and when the program ends free, these locations are releasing the
+				memory. In some programming languages, you can call routines to clear
+				this garbage and some languages manage it automatically. But in short,
+				clearing these free locations is the process of collecting the garbage
+				or garbage collection, or even sometimes referred as GC. So I guess now
+				you know, what is garbage collection? And this explanation is general
+				and applied to all programming languages. Now let's talk about how this
+				thing happens in JavaScript. JavaScript is a high level language, so you
+				do not need to allocate memory. Memory allocation and releasing happens
+				automatically, making the memory free in the process of garbage
+				collection. And there is a routine who does it called the garbage
+				collector. And this GC process is also called Automatic Memory
+				Management, with reference to JavaScript.
+			</Answer>
 		</div>
 	);
 }
