@@ -437,13 +437,12 @@ function Jsques2() {
 					<div className="ms-4">
 						try <LCB />
 						<br />
-						yield "One"; <br />
-						yield "Two";
-						<br />
+						<div className="ms-4">
+							yield "One"; <br />
+							yield "Two";
+						</div>
 						<RCB /> finally <LCB />
-						<br />
-						yield "Finally";
-						<br />
+						<div className="ms-4">yield "Finally";</div>
 						<RCB />
 						<br />
 					</div>
