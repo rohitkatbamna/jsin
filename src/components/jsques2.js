@@ -584,17 +584,85 @@ function Jsques2() {
 				process. This is a continuous process. In fact, till the program ends
 				and when the program ends free, these locations are releasing the
 				memory. In some programming languages, you can call routines to clear
-				this garbage and some languages manage it automatically. But in short,
-				clearing these free locations is the process of collecting the garbage
-				or garbage collection, or even sometimes referred as GC. So I guess now
-				you know, what is garbage collection? And this explanation is general
-				and applied to all programming languages. Now let's talk about how this
-				thing happens in JavaScript. JavaScript is a high level language, so you
-				do not need to allocate memory. Memory allocation and releasing happens
-				automatically, making the memory free in the process of garbage
-				collection. And there is a routine who does it called the garbage
-				collector. And this GC process is also called Automatic Memory
-				Management, with reference to JavaScript.
+				this garbage and some languages manage it automatically.{" "}
+				<Bita>
+					But in short, clearing these free locations is the process of
+					collecting the garbage or garbage collection, or even sometimes
+					referred as GC.
+				</Bita>{" "}
+				So I guess now you know, what is garbage collection ? And this
+				explanation is general and applied to all programming languages. Now
+				let's talk about how this thing happens in JavaScript.
+				<br />
+				<Bita>
+					{" "}
+					JavaScript is a high level language, so you do not need to allocate
+					memory. Memory allocation and releasing happens automatically, making
+					the memory free in the process of garbage collection. And there is a
+					routine who does it called the garbage collector. And this GC process
+					is also called Automatic Memory Management, with reference to
+					JavaScript.The garbage collection considers references and it tries to
+					release the memory if a location is not reachable.
+				</Bita>
+				<br />
+				In example below see that
+				<Example>
+					let obj = <LCB />
+					<div className="ms-4">name: 'Orange',</div>
+					<RCB />
+					<br />
+					console.log(obj); // <LCB /> name: 'orange' <RCB />
+					<br />
+					obj = null
+					<br />
+					console.log(obj); // null
+				</Example>
+				<Bita>
+					Object has a reference to name that is this orange and that reference
+					is canceled now because object is null.So this name, this orange
+					doesn't have any reference. So this is something which needs to be
+					cleared. So this area which doesn't have any reference, nothing can
+					exist. This value is actually unreachable. This value is cleared up in
+					GC.
+				</Bita>
+				<Example>
+					let obj = <LCB /> <br />
+					<div className="ms-4">name: 'orange'</div>
+					<RCB />
+					<br />
+					let obj1= obj;
+					<br />
+					console.log(obj);//orange
+					<br /> console.log(obj1);//orange
+					<br /> obj = null;
+					<br />
+					console.log(obj);//null
+					<br /> console.log(obj1); // <LCB /> name: 'orange' <RCB />
+					<br />
+				</Example>
+				<Bita>
+					Assigning one object one with the object is done here. When you assign
+					null to obj it makes "orange" unreachable only to obj but not to obj1
+					so "orange" is reachable and not clean up.
+					<br />
+					All of this is based on Mark and Sweep algorithm The logic is that the
+					algorithm starts from the root object and checks for the reference is
+					linked in case. If this algorithm finds unreachable locations, then
+					those are the locations to be removed.Mark will mark all the
+					referenced items. But things which are unreachable, things which are
+					not having any link to reference will be not marked. And then the mark
+					and sweep algorithm runs. It will look for unmarked locations and it
+					will clean it. That's how the garbage collection happens. All the
+					modern browsers use mark and sweep algorithm in older browsers in case
+					of circular reference. In older browsers in case of circular reference
+					memory leaks but that is not a concern now.
+				</Bita>
+				<br />
+				So to summarize, the concept of memory management and garbage collection
+				in JavaScript, memory allocation is done automatically. As long as
+				references exist, there will not be any cleaning or collecting the
+				garbage. If a location is unreachable, then that will be collected as a
+				garbage or that memory will be released.
 			</Answer>
 		</div>
 	);
