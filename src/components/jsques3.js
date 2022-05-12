@@ -96,6 +96,11 @@ function Jsques3() {
 				error without breaking the code execution.
 			</Answer>
 			<Question>Q42. How can you generate an error ?</Question>
+			<Answer>
+				Ans. We can generate a custom error using this throw statement and error
+				class or predefined JavaScript error class can also be generated using
+				Throw statements.
+			</Answer>
 		</>
 	);
 }
