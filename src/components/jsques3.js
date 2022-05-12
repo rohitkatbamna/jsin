@@ -1,6 +1,7 @@
 import React from "react";
 import {
 	Answer,
+	Bita,
 	Example,
 	LCB,
 	Question,
@@ -100,6 +101,42 @@ function Jsques3() {
 				Ans. We can generate a custom error using this throw statement and error
 				class or predefined JavaScript error class can also be generated using
 				Throw statements.
+			</Answer>
+			<Question>
+				Q43. Can you generate syntax error or reference error kind of predefined
+				JavaScript Error ?
+			</Question>
+			<Answer>
+				These are the predefined JavaScript errors, but you can use the throw
+				statement to raise the JavaScript builtin errors as well.
+			</Answer>
+			<Question>Q44. What is the purpose of the final block?</Question>
+			<Answer>
+				Ans. The final block contains the code, which is always executed.
+				Whether that is an error or that is no error in the code. So if there is
+				an error, the catch code is executed. But finally, code also always
+				executed.
+				<Bita>
+					So finally contains code which does some finishing work or some code
+					which ought to be executed.
+				</Bita>
+			</Answer>
+			<Question>
+				Q45. How can you refer to the name or description of added ?
+			</Question>
+			<Answer>
+				Ans. So inside the Catch block, we have seen that there is the err
+				object or whatever you name the "err" object. Just console.log object
+				dot name(err.name) or object dot message (err.message) or object dot
+				stack (err.stack)
+			</Answer>
+			<Question>
+				Q46. Can we have finally block without a catch block ?
+			</Question>
+			<Answer>
+				Ans. Of course we can have, not necessarily that we always have a catch
+				block. There are times we dont want error to be catch so insead we just
+				use finally.
 			</Answer>
 		</>
 	);

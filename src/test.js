@@ -4,6 +4,6 @@ try {
 	if (a < 18) {
 		throw ageErr;
 	}
-} catch (err) {
-	console.log(err.message);
+} catch (seem) {
+	console.log(seem.message);
 }
