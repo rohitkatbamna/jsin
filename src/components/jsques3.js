@@ -87,7 +87,15 @@ function Jsques3() {
 				code. Write the finalizing code. At that time we use the final block
 				code.
 			</Answer>
-			<Question></Question>
+			<Question>Q41. When do you need try...catch ?.</Question>
+			<Answer>
+				Ans. Try catch is handled at runtime. So when you see that the code
+				executed is expecting some unforeseen situations, some portion of code
+				needs to be managed properly so that the program doesn't stop in
+				between. Then we use the try catch block. It's all about handling the
+				error without breaking the code execution.
+			</Answer>
+			<Question>Q42. How can you generate an error ?</Question>
 		</>
 	);
 }
