@@ -206,6 +206,44 @@ function Jsques3() {
 			<Answer>
 				Ans. <Bita>Undefined</Bita>
 			</Answer>
+			<Question>
+				Q51. What is the difference between push() and unshift() method?
+			</Question>
+			<Answer>
+				Ans. push is adds element to the end of array, whereas unshift adds
+				element to the beginning of the Array.
+			</Answer>
+			<Question>
+				Q52. What is the difference between pop() and shift() ?
+			</Question>
+			<Answer>
+				Ans. pop is removes the last element of array, whereas shift removes
+				element from the beginning of the Array.
+			</Answer>
+			<Question>
+				Q53. How can you insert an element had given position?
+			</Question>
+			<Answer>
+				Ans. So splice is the method which we can use
+				<Example>arr.splice(0,0,"New");</Example>
+			</Answer>
+			<Question>Q54. How can you remove a specific element ?</Question>
+			<Answer>Ans. So splice is the method which we can use</Answer>
+			<Question>Q55. What does splice method return ?</Question>
+			<Answer>
+				Ans. So splice method returns, deleted items. Remember, if there is
+				nothing to delete, then it will return an empty Array.
+			</Answer>
+			<Question>
+				Q56. If there is no element to be removed, then what will splice method
+				return?
+				<Example>
+					let arr = [1, 2, 3, 4, 5]; <br />
+					console.log(arr.splice(2, 0, 5));
+					<br />
+				</Example>
+			</Question>
+			<Answer>Ans. Again this kind of program will return empty Array.</Answer>
 		</>
 	);
 }
