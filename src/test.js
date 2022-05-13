@@ -1,9 +1,4 @@
-let a = 8;
-let ageErr = new Error("Age Error");
-try {
-	if (a < 18) {
-		throw ageErr;
-	}
-} catch (seem) {
-	console.log(seem.message);
-}
+let arr = new Array(10, 20, 30);
+console.log(arr);
+let arr1 = [1, 2, 3, 4];
+console.log(arr1);

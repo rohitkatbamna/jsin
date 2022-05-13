@@ -149,6 +149,26 @@ function Jsques3() {
 				<br />
 				JavaScript we have Array, which can store any type of value. In fact, we
 				have "Array" class and arrays are the prototype of this class.
+				<br />
+				Following are the ways arrays are written:
+				<Example>
+					let arr = new Array(10, 20, 30);
+					<br />
+					console.log(arr); // [ 10, 20, 30 ]
+					<br />
+					let arr1 = [1, 2, 3, 4];
+					<br />
+					console.log(arr1); // [ 1, 2, 3, 4 ]
+				</Example>
+				Traversal means we are going to navigate through an Array.Or to say loop
+				thought an array.
+			</Answer>
+			<Question>
+				Q48. What is the difference between for..in and for..of?
+			</Question>
+			<Answer>
+				Ans. for..in will display the index, whereas for..of will refer the
+				value
 			</Answer>
 		</>
 	);
