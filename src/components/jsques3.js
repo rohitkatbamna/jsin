@@ -170,6 +170,33 @@ function Jsques3() {
 				Ans. for..in will display the index, whereas for..of will refer the
 				value
 			</Answer>
+			<Question>
+				Q49. What will be the output of the below code ?
+				<Example>
+					let arr = [1,2,3,4,5];
+					<br />
+					arr.forEach(function(element , index)
+					<LCB />{" "}
+					<div className="ms-4">
+						if(index = = = 2)
+						<LCB />
+						<br />
+						<div className="ms-4">break;</div>
+						<RCB />
+					</div>
+					<RCB />)
+				</Example>
+			</Question>
+			<Answer>
+				Ans. SyntaxError: Illegal break statement. Explanation is that you cant
+				put break in for forEach loop.why can’t we break out of a forEach()
+				loop? It's because the loop is running that callback function over every
+				item, so even if you write a return it's only returning on that instance
+				of the function. It keeps going. In the case of the forEach() function,
+				it doesn't do anything with the returned code.
+			</Answer>
+			<Question>Q50. What will be the output of the below code ?</Question>
+			<Answer>Ans.</Answer>
 		</>
 	);
 }
