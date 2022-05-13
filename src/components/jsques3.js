@@ -138,6 +138,18 @@ function Jsques3() {
 				block. There are times we dont want error to be catch so insead we just
 				use finally.
 			</Answer>
+			<Question>Q47. Explain Array and traversal in Array.</Question>
+			<Answer>
+				Ans. Normally when you have a variable, it can store only one value. For
+				example, we have a variable where I say let i =10 . It means that there
+				is one location in which value ten is stored. If I on the second line
+				that i=20 it means the value is overwritten. So at a time only one value
+				is stored. When you want to store more values under one name, then you
+				can use an Array. Array is available in all programming languages.
+				<br />
+				JavaScript we have Array, which can store any type of value. In fact, we
+				have "Array" class and arrays are the prototype of this class.
+			</Answer>
 		</>
 	);
 }
