@@ -195,8 +195,17 @@ function Jsques3() {
 				of the function. It keeps going. In the case of the forEach() function,
 				it doesn't do anything with the returned code.
 			</Answer>
-			<Question>Q50. What will be the output of the below code ?</Question>
-			<Answer>Ans.</Answer>
+			<Question>
+				Q50. What will be the output of the below code ?
+				<Example>
+					let arr = [1, 2, 3, 4, 5];
+					<br />
+					console.log(arr[arr.length]);
+				</Example>
+			</Question>
+			<Answer>
+				Ans. <Bita>Undefined</Bita>
+			</Answer>
 		</>
 	);
 }
