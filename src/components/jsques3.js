@@ -243,7 +243,9 @@ function Jsques3() {
 					<br />
 				</Example>
 			</Question>
-			<Answer>Ans. Again this kind of program will return empty Array.</Answer>
+			<Answer>Ans. Again this kind of program console log empty Array.</Answer>
+			<Question>Q57. How do you perform search in an array ?</Question>
+			<Answer></Answer>
 		</>
 	);
 }
